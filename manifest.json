@@ -1,0 +1,37 @@
+{
+
+  "manifest_version": 2,
+  "name": "Facebook Messenger as a Sidebar",
+  "description": "Displays a sidebar that lets you talk to your friends using Facebook Messenger. Icon by Yuliia Osadcha  (https://www.iconfinder.com/Juliia_Os)",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "54.0a1"
+    }
+  },
+
+  "icons": {
+    "48": "icons/icon_48.png",
+    "96": "icons/icon_96.png"
+  },
+
+  "sidebar_action": {
+    "default_icon": {
+      "48": "icons/icon_48.png",
+      "96": "icons/icon_96.png"
+    },
+    "default_title" : "Facebook Messenger",
+    "default_panel": "index.html"
+  },
+
+  "permissions": ["storage", "tabs"],
+
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      }
+    }
+  }
+
+}
